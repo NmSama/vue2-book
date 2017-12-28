@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "bookName":"Vue2.x 实践揭秘",
+      "bookAuthor":["梁坤"],
+      "bookPublish":"电子工业出版社",
+      "bookPrice":"201.34"
+    },
+    {
+      "bookName":"中国近代史",
+      "bookAuthor":["张静玲","钱雪书"],
+      "bookPublish":"中国人民出版社",
+      "bookPrice":"185.2"
+    },
+    {
+      "bookName":"中国近代史",
+      "bookAuthor":["张静玲","钱雪书"],
+      "bookPublish":"中国人民出版社",
+      "bookPrice":"185.2"
+    },
+    {
+      "bookName":"中国近代史",
+      "bookAuthor":["张静玲","钱雪书"],
+      "bookPublish":"中国人民出版社",
+      "bookPrice":"185.2"
+    }
+  ]
+}

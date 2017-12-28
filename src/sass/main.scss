@@ -1,0 +1,367 @@
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+#app{
+  margin: 0 !important;
+  padding: 0;
+}
+.tabs-content{
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 10px;
+  .item-list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li{
+      float: left;
+      width: 25%;
+      list-style: none;
+      img{
+        float: left;
+      }
+      .item-name{
+        line-height: 30px;
+      }
+    }
+  }
+  .active{
+    color: #888;
+  }
+}
+.news-container{
+  text-align: left;
+  padding-left: 15px;
+  label{
+    display: inline-block;
+    padding: 5px;
+    background: #eee;
+    border-radius: 5px;
+  }
+}
+.newbook-container,.editbook-container{
+  margin-top: 5px;
+  font-size: 12px;
+  .books-list li{
+    display: inline-block;
+    width: 30%;
+    .item-cover{
+      margin: 0 2px 0;
+    }
+    .item-title,.item-author{
+      line-height: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .book-content{
+    clear: both;
+    .book-title{
+      float: left;
+      margin-left: 20px;
+      margin-bottom: 2px;
+    }
+    .more{
+      float: right;
+      margin-right: 20px;
+      margin-bottom: 2px;
+      color: #007aff;
+    }
+  }
+}
+
+.cate-container{
+  font-size: 14px;
+  .left-container{
+    float: left;
+    width: 25%;
+    text-align: center;
+    .left-list-container{
+      border-right: 1px solid #E0E0E0;
+      li{
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px solid #E0E0E0;
+      }
+    }
+  }
+  .main-container{
+    float: left;
+    width: 75%;
+    .main-list-container{
+      li{
+        margin-top: 8px;
+        .hold-image{
+          margin: 0 auto;
+          width: 60px;
+          height: 60px;
+          background: #eeeeee;
+        }
+        float: left;
+        width: 33.3%;
+      }
+    }
+  }
+}
+
+.cart-container{
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  .cart-book-checkbox{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    background: url(../assets/images/icon/checkbox.png);
+  }
+  .checkbox-all{
+    margin-right: 2px;
+    margin-top: 0;
+    vertical-align: middle;
+  }
+  .checkbox-all-title{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .cart-book-img{
+    width: 20%;
+    margin-right: 10px;
+  }
+  .cart-book-detail{
+    display: inline-block;
+    width: 45%;
+    height: 75px;
+    vertical-align: top;
+    p{
+      line-height: 24px;
+      text-align: left;
+    }
+    .title{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .cart-book-num{
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    input{
+      width: 26px;
+      height: 18px;
+      text-align: center;
+      border: 1px solid #d0d0d0;
+    }
+    .num-sub, .num-plus{
+      display: inline-block;
+      margin: 0 -5px 0;
+      width: 10px;
+      height: 18px;
+      text-align: center;
+      color: #666;
+      border: 1px solid #d0d0d0;
+    }
+  }
+}
+.detail-container{
+  padding: 5%;
+  text-align: left;
+  .detail-box{
+    margin-top: 24px;
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .close{
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .detail-header{
+    .detail-image{
+      float: left;
+      display: inline-block;
+      margin-left: 5px;
+      width: 30%;
+    }
+    .detail-info{
+      float: left;
+      padding-left: 5%;
+      width: 60%;
+      p{
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .detail-content{
+    margin-top: 16px;
+    padding-bottom: 20px;
+    h3{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .detail-intro{
+      margin-top: 5px;
+      text-indent: 20px;
+      line-height: 24px;
+    }
+  }
+  .detail-price-content{
+    margin-top: 10px;
+    .price-box{
+      float: left;
+      width: 40%;
+      height: 40px;
+      line-height: 40px;
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #E0E0E0;
+    }
+    .price{
+      margin-right: -1px;
+      margin-left: 10%;
+    }
+  }
+  .btn-group{
+    margin: 20px auto 0;
+    width: 80%;
+    button{
+      width: 100%;
+      margin-top: 8px;
+    }
+  }
+}
+
+.me-container{
+  padding: 5%;
+  .me-head-container{
+    padding-bottom: 12px;
+    .me-avatar{
+      float: left;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .me-name{
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      line-height: 100px;
+    }
+    .iconfont{
+      float: left;
+      line-height: 100px;
+      color: #FF0080;
+    }
+  }
+  .me-content{
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    .order-title{
+      margin-left: 5px;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    .order-list{
+      font-size: 14px;
+      li{
+        float: left;
+        width: 25%;
+        .iconfont{
+          font-size: 30px;
+        }
+        p{
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+.search-section{
+  position: absolute;
+  top: 2px;
+  z-index: 100;
+  .search-container{
+    position: relative;
+    margin: 8px auto 0;
+    width: 183px;
+    input{
+      padding: 4px 6px;
+      border: 1px solid #E0E0E0;
+      border-radius: 5px;
+    }
+    .icon-sousuo{
+      position: absolute;
+      top: 4px;
+      right: 10px;
+    }
+  }
+}
+.more-container{
+  padding: 0 5% 0;
+  font-size: 14px;
+  text-align: left;
+  .item-img{
+    float: left;
+    width: 24%;
+  }
+  .more-list{
+    margin-top: 36px;
+    overflow-y: auto;
+  }
+  .more-item{
+    position: relative;
+    padding: 6px 0 6px;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .item-container{
+    float: left;
+    margin-left: 20px;
+    width: 60%;
+    p{
+      line-height: 22px;
+    }
+    .item-name{
+      font-size: 16px;
+    }
+    .item-price{
+      margin-top: 18px;
+      color: #FF5151;
+    }
+  }
+  .icon-cart{
+    position: absolute;
+    bottom: 4px;
+    color: #FF5151;
+  }
+}
+
+//切换特效动画
+.slide-fade-enter-active{
+  transition: all .3s ease;
+}
+.slide-fade-leave-active{
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-active{
+  transform: translateX(-430px);
+  opacity: 0;
+}
+//重写样式
+.mint-button--default{
+  background-color: #E0E0E0 !important;
+}
