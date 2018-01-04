@@ -2,7 +2,6 @@
   <div id="main">
     <div class="tabs-content">
       <ul class="item-list">
-        <!--使用router-view指向定义的view-->
         <router-link :to="{name: 'Home'}" tag="li">
           <i class="iconfont icon-shouye"></i>
           <div class="item-name">首页</div>

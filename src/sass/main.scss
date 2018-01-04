@@ -123,6 +123,9 @@
     vertical-align: top;
     background: url(../assets/images/icon/checkbox.png);
   }
+  .active{
+    background: url(../assets/images/icon/checkboxed.png);
+  }
   .checkbox-all{
     margin-right: 2px;
     margin-top: 0;
@@ -131,6 +134,13 @@
   .checkbox-all-title{
     display: inline-block;
     margin-bottom: 10px;
+  }
+  .cart-book-operate{
+    display: inline-block;
+    float: right;
+    .iconfont{
+      font-size: 20px;
+    }
   }
   .cart-book-img{
     width: 20%;
@@ -142,7 +152,7 @@
     height: 75px;
     vertical-align: top;
     p{
-      line-height: 24px;
+      /*line-height: 24px;*/
       text-align: left;
     }
     .title{

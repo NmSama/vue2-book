@@ -8,7 +8,7 @@
       <app-banner :slides="slides"></app-banner>
       <div class="news-container">
         <label>快讯</label>
-        <span>距离元旦只剩{{getDate}}天</span>
+        <span>距离春节只剩{{getDate}}天</span>
       </div>
     </section>
     <section class="newbook-container">
@@ -49,7 +49,7 @@
     computed: {
       getDate: function () {
         const startDate = new Date()
-        const endDate = new Date('2018-1-1')
+        const endDate = new Date('2018-2-16')
         var remainDate = parseInt((endDate.getTime() - startDate.getTime()) / (24 * 60 * 60 * 1000))
         return remainDate
       }

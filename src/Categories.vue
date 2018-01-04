@@ -11,50 +11,16 @@
     </aside>
     <section class="main-container">
       <router-view></router-view>
-      <ul class="main-list-container" :style="{height: getScreenSize() + 'px'}">
-        <li>
-          <div class="hold-image"></div>
-          <p>人类简史</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>明朝那些事</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>史记</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>万历十万年</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>甲骨文丛书</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>资治通鉴</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>山海经</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>诗经</p>
-        </li>
-        <li>
-          <div class="hold-image"></div>
-          <p>论语</p>
-        </li>
-      </ul>
+
     </section>
   </div>
 </template>
 <style></style>
 <script>
   export default {
+    props:[
+      heading
+    ],
     methods: {
       getScreenSize: function () {
         const screenHeight = document.documentElement.clientHeight

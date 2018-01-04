@@ -33,7 +33,6 @@
     created: function () {
       this.$http.get('http://127.0.0.1:8080/static/json/bookList.json').then((res)=>{
         this.bookList = res.data.data
-        console.log(res.data.data)
       })
     },
     methods: {
