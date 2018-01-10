@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "fictionName":"现代文学",
+      "fid": 21
+    },
+    {
+      "fictionName":"古代文学",
+      "fid": 22
+    },
+    {
+      "fictionName":"中国文学",
+      "fid": 23
+    },
+    {
+      "fictionName":"国外文学",
+      "fid": 24
+    },
+    {
+      "fictionName":"文学1",
+      "fid": 25
+    },
+    {
+      "fictionName":"文学2",
+      "fid": 26
+    }
+  ]
+}

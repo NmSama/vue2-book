@@ -11,7 +11,7 @@
         marginToLeft: 0
       }
     },
-    mounted: function(){
+    mounted(){
       let screenWidth = document.documentElement.clientWidth
       let searchWidth = document.querySelector('.search-input').clientWidth
       let searchToLeft = (screenWidth - searchWidth) / 2

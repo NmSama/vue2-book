@@ -3,7 +3,7 @@
   <div class="me-container">
     <div class="me-head-container clearfix">
       <div class="me-avatar">
-        <img src="./assets/images/avatar.jpg" width="100%" alt="个人头像">
+        <img src="../assets/images/avatar.jpg" width="100%" alt="个人头像">
       </div>
       <p class="me-name">这是一个很长的昵称</p>
       <i class="iconfont icon-nv"></i>

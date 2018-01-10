@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "fictionName":"小说",
+      "fid": 1
+    },
+    {
+      "fictionName":"文学",
+      "fid": 2
+    },
+    {
+      "fictionName":"人文社科",
+      "fid": 3
+    },
+    {
+      "fictionName":"育儿/家教",
+      "fid": 4
+    },
+    {
+      "fictionName":"科学",
+      "fid": 5
+    },
+    {
+      "fictionName":"IT/人工智能",
+      "fid": 6
+    }
+  ]
+}

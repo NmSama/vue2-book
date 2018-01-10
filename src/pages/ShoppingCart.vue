@@ -15,7 +15,7 @@
       <img class="cart-book-img" :src="item.url">
       <div class="cart-book-detail">
         <p class="title">{{item.title}}</p>
-        <p>{{item.authors}}</p>
+        <p>{{item.authors | join}}</p>
         <p>¥{{item.price}}</p>
       </div>
       <div class="cart-book-num">
@@ -28,8 +28,8 @@
   </div>
 </template>
 <script>
-  import CartList from './components/CartList.vue'
-  import url from './assets/images/book-cover.png'
+  import CartList from '../components/CartList.vue'
+  import url from '../assets/images/book-cover.png'
   export default {
     data() {
       return {
@@ -42,22 +42,27 @@
         checkedNum: 0
       }
     },
+    filters:{
+      join(args) {
+        return args.join('，')
+      }
+    },
     methods: {
-      subNum: function (book) {
+      subNum(book) {
         if(book.count > 1){
           book.count--
         }
       },
-      plusNum: function (book) {
+      plusNum(book) {
         book.count++
       },
-      toggleCheck: function (book) {
+      toggleCheck(book) {
         book.check = !book.check
         this.getCheckedNum()
       },
-      toggleAllCheck:function () {
+      toggleAllCheck() {
         let tag = 0
-        if(this.checkedNum == this.options.length){
+        if(this.checkedNum === this.options.length){
           tag = 0
         }else{
           tag = 1
@@ -67,7 +72,7 @@
         })
         this.getCheckedNum()
       },
-      getCheckedNum: function(){
+      getCheckedNum(){
         let num = 0
         this.options.forEach(item => {
           num += item.check

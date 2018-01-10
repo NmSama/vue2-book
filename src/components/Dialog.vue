@@ -4,7 +4,7 @@
     <div class="close">&times;</div>
     <div class="detail-box">
       <div class="detail-header clearfix">
-        <img class="detail-image" src="./assets/images/book1.png" alt="">
+        <img class="detail-image" src="../assets/images/book1.png" alt="">
         <div class="detail-info">
           <p class="detail author">老夏</p>
           <p class="detail-page">254</p>
@@ -38,7 +38,5 @@
 </template>
 <style></style>
 <script>
-  export default {
-    name: 'books'
-  }
+  export default {}
 </script>

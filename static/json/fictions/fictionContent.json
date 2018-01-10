@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "fictionName":"都市",
+      "fid": 11
+    },
+    {
+      "fictionName":"校园",
+      "fid": 12
+    },
+    {
+      "fictionName":"爱情",
+      "fid": 13
+    },
+    {
+      "fictionName":"古装/穿越",
+      "fid": 14
+    },
+    {
+      "fictionName":"霸道总裁",
+      "fid": 15
+    },
+    {
+      "fictionName":"最新连载",
+      "fid": 16
+    }
+  ]
+}

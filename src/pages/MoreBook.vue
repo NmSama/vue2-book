@@ -5,7 +5,7 @@
     </section>
     <ul class="more-list" :style="{'height': + getScreenSize() + 'px'}">
       <li v-for="item in bookList" class="more-item clearfix">
-        <img class="item-img" src="./assets/images/book4.png">
+        <img class="item-img" src="../assets/images/book4.png" @click="goDetail()">
         <div class="item-container">
           <p class="item-name">{{item.bookName}}</p>
           <p class="item-author">{{item.bookAuthor | join}} 著</p>
@@ -18,7 +18,7 @@
   </div>
 </template>
 <script>
-  import SearchBox from './components/SearchBox.vue'
+  import SearchBox from '../components/SearchBox.vue'
   export default {
     data() {
       return{
@@ -30,16 +30,21 @@
         return args.join('，')
       }
     },
-    created: function () {
+    created() {
       this.$http.get('http://127.0.0.1:8080/static/json/bookList.json').then((res)=>{
         this.bookList = res.data.data
       })
     },
     methods: {
-      getScreenSize: function () {
+      getScreenSize() {
         const screenHeight = document.documentElement.clientHeight
         const height = screenHeight - 108
         return height
+      },
+      goDetail(){
+        this.$router.push({
+          name: 'BookDetail'
+        })
       }
     },
     components:{
