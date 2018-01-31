@@ -12,12 +12,13 @@
           <p class="item-publish">{{item.bookPublish}}</p>
           <p class="item-price">{{item.bookPrice}}</p>
         </div>
-        <i class="iconfont icon-cart"></i>
+        <i class="iconfont icon-cart" @click="addCart(item)"></i>
       </li>
     </ul>
   </div>
 </template>
 <script>
+  import {MessageBox} from 'mint-ui'
   import SearchBox from '../components/SearchBox.vue'
   export default {
     data() {
@@ -45,6 +46,11 @@
         this.$router.push({
           name: 'BookDetail'
         })
+      },
+      addCart(book){
+        MessageBox.alert('加入购物车成功').then(action => {
+          console.log(1)
+        });
       }
     },
     components:{

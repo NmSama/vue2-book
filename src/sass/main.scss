@@ -2,15 +2,13 @@
   overflow: auto;
   zoom: 1;
 }
-#app{
-  margin: 0 !important;
-  padding: 0;
-}
 .tabs-content{
   position: absolute;
-  margin: 0 auto;
+  left: 0;
+  /*margin: 0 auto;*/
   width: 100%;
   bottom: 10px;
+  text-align: center;
   .item-list{
     padding: 0;
     margin: 0;
@@ -74,6 +72,9 @@
       color: #007aff;
     }
   }
+  .books-list{
+    text-align: center;
+  }
 }
 
 .cate-container{
@@ -94,6 +95,9 @@
   .main-container{
     float: left;
     width: 75%;
+    h3,p{
+      text-align: center;
+    }
     .main-list-container{
       li{
         margin-top: 8px;
@@ -114,6 +118,13 @@
   padding: 20px;
   font-size: 14px;
   text-align: left;
+  .cart-empty{
+    padding: 30% 0 30%;
+    text-align: center;
+    .iconfont{
+      font-size: 56px;
+    }
+  }
   .cart-book-checkbox{
     display: inline-block;
     margin-right: 10px;
@@ -123,8 +134,11 @@
     vertical-align: top;
     background: url(../assets/images/icon/checkbox.png);
   }
-  .active{
+  .cart-book-checkbox+.active{
     background: url(../assets/images/icon/checkboxed.png);
+  }
+  .checkbox-all-con{
+    display: inline-block;
   }
   .checkbox-all{
     margin-right: 2px;
@@ -170,6 +184,7 @@
       height: 18px;
       text-align: center;
       border: 1px solid #d0d0d0;
+      vertical-align: top;
     }
     .num-sub, .num-plus{
       display: inline-block;
@@ -274,7 +289,13 @@
     .iconfont{
       float: left;
       line-height: 100px;
+    }
+    .icon-nv{
       color: #FF0080;
+    }
+    .icon-shezhi{
+      font-size: 18px;
+      margin-left: 5px;
     }
   }
   .me-content{
@@ -287,6 +308,7 @@
     }
     .order-list{
       font-size: 14px;
+      text-align: center;
       li{
         float: left;
         width: 25%;
@@ -371,7 +393,8 @@
   transform: translateX(-430px);
   opacity: 0;
 }
+
 //重写样式
 .mint-button--default{
-  background-color: #E0E0E0 !important;
+  background-color: #E0E0E0;
 }

@@ -9,10 +9,12 @@
     <section class="main-container">
       <router-view></router-view>
     </section>
+    <main-footer></main-footer>
   </div>
 </template>
 <style></style>
 <script>
+  import Footer from '../../components/Footer.vue'
   import FictionContent from './children/FictionContent.vue'
   export default {
     data(){
@@ -22,6 +24,7 @@
     },
     created(){
       this.getFictionList()
+      this.$router.push({path: '/categories/fictions/1'})
     },
     mounted(){
       console.log(this.$route.params)
@@ -39,7 +42,8 @@
       }
     },
     components: {
-      'fiction-content': FictionContent
+      'fiction-content': FictionContent,
+      'main-footer': Footer
     }
   }
 </script>

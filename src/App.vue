@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <transition name="slide-fade">
       <router-view></router-view>
     </transition>
@@ -17,12 +17,12 @@ export const domain = 'http://127.0.0.1:8080/'
 </script>
 
 <style>
-#app {
+/*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
+ margin-top: 60px;
+}*/
 </style>

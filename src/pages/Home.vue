@@ -17,9 +17,11 @@
     <section class="editbook-container">
       <book-list :books="editList" heading="编辑推荐"></book-list>
     </section>
+    <main-footer></main-footer>
   </div>
 </template>
 <script>
+  import Footer from '../components/Footer.vue'
   import Banner from '../components/Swiper.vue'
   import BookList from '../components/BookList.vue'
   import SearchBox from '../components/SearchBox.vue'
@@ -57,7 +59,8 @@
     components: {
       'app-banner': Banner,
       'book-list': BookList,
-      'app-search': SearchBox
+      'app-search': SearchBox,
+      'main-footer': Footer
     }
   }
 </script>

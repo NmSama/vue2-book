@@ -1,0 +1,14 @@
+.mint-radio-label{
+  font-size: 14px;
+}
+.mint-radiolist-label{
+  padding-left: 20px;
+}
+.mint-cell{
+  min-height: 26px;
+  line-height: 22px;
+}
+.mint-radio-input:checked + .mint-radio-core{
+  background-color: #2c89ea;
+  border-color: #2c89ea;
+}
